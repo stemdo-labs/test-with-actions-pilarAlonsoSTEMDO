@@ -34,7 +34,6 @@ Puedes seguir el progreso mientras GitHub Actions ejecuta tu trabajo yendo a la 
 
 Cuando las pruebas finalicen, verás una marca de verificación roja :x: o una marca de verificación verde :heavy_check_mark: en el cuadro de fusión. En ese momento, puedes acceder a los registros del trabajo de compilación y sus pasos asociados.
 
-
 _Al observar los registros, ¿puedes identificar qué pruebas fallaron?_ Para encontrarlo, ve a una de las compilaciones fallidas y desplázate por el registro. Busca una sección que liste todas las pruebas unitarias. Estamos buscando el nombre de la prueba con una "x".
 
 <img alt="captura de pantalla de un registro de compilación de muestra con los nombres de las pruebas desenfocados" src=https://user-images.githubusercontent.com/16547949/65922013-e740a200-e3b1-11e9-8151-faf52c30201e.png width=400 />
@@ -44,8 +43,7 @@ Si las verificaciones no aparecen o si las verificaciones están atascadas en pr
 - Actualiza la página, es posible que el workflow se haya ejecutado y la página simplemente no se haya actualizado con ese cambio.
 - Intenta hacer un commit en esta rama. Nuestro workflow se activa con un evento `push`, y hacer un commit en esta rama resultará en un nuevo `push`.
 - Edita el archivo de workflow en GitHub y asegúrate de que no haya líneas rojas que indiquen un problema de sintaxis.
-
-
+  
 ### :keyboard: Actividad: Corregir la prueba
 
 1. Actualiza el contenido en la rama `ci` para que la prueba pase. Necesitas mirar los registros para ver qué causó que la prueba fallara.
