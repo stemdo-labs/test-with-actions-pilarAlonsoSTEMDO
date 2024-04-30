@@ -44,8 +44,7 @@ jobs:
     # Reference: https://docs.github.com/actions/learn-github-actions/expressions
     if: ${{ !github.event.repository.is_template
           && needs.get_current_step.outputs.current_step == 1 }}
-          
-  # We'll run Ubuntu for performance instead of Mac or Windows.
+    # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
 
     steps:
